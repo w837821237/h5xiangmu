@@ -1,147 +1,333 @@
-/*
-* @Author: Marte
-* @Date:   2019-03-03 10:43:01
-* @Last Modified by:   Marte
-* @Last Modified time: 2019-03-03 16:00:47
-*/
-#bg {
-   width: 1000px;
-   height: 1000px;
-   position: absolute;
-   // background-color: pink;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   transition : all 2s;
+
+#fp-nav ul li a.active span{
+    background-color: #8000FF!important;
 }
-.rotate {
-     transform: translate(-50%,-50%) rotateZ(-60deg)!important;
-}
-.circle1 div, .circle2 div , .circle3 div{
-    background: -webkit-linear-gradient(top,#fff,#dedede);
-    border-radius: 50%;
-}
-.circle1 .cir-1{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-left: -100px;
-    margin-top: -250px;
-}
-.circle1 .cir-2 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-left: 400px;
-    margin-top: -250px;
-}
-.circle1 .cir-3 {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-left: -300px;
-    margin-top: -250px;
-}
-.circle2 .cir-1 {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-left: 100px;
-    margin-top: 0;
-}
-.circle3 .cir-1 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-left: -100px;
-    margin-top:  270px;
+.go {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 999;
 }
 .section1 {
-    perspective: 1000px;
+    background: #fadd67 url(../images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;
+}
+.fly {
+    position:absolute;
+    left: 45%;
+    top:15%;
+}
+.sf{
+    position: absolute;
+    top:18%;
+    left: 34%;
+}
+.goods{
+    position: absolute;
+    left: 17%;
+    top: 31%;
 }
 .section2 {
-    perspective: 1000px;
+   background: #84a2d4 url(../images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+   z-index:999;
+}
+.computer{
+     width: 990px;
+     height: 500px;
+     position:absolute;
+     bottom:0;
+     left: 50%;
+     transform:translateX(-50%);
+}
+.search {
+     width: 222px;
+     height: 45px;
+     background: url(../images/search.png) no-repeat;
+     position:absolute;
+     right: -30px;
+     bottom:300px;
+     display:none;
+}
+.search-word{
+    width: 68px;
+    height: 32px;
+    position: absolute;
+    right: 5px;
+    bottom:8px;
+    opacity: 0;
+}
+.searchAll{
+    width: 222px;
+    height: 45px;
+    position:absolute;
+    bottom:300px;
+    right: 370px;
+    display: none;
+}
+.goods-sf {
+    width: 100px;
+    position:absolute;
+    bottom: 217px;
+    right:270px;
+    display:none;
+}
+.computer-sf{
+    position: absolute;
+    bottom:347px;
+    left: 395px;
+    width: 100px;
+    display:none;
+}
+.cover {
+    position: absolute;
+    bottom:347px;
+    left: 393px;
+    width: 103px;
+    height: 81px;
+    background-color: rgb(255,255,255);
+    display:none;
+}
+.words-01{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom:550px;
+}
+.words-02{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom:550px;
+    opacity:0;
 }
 .section3 {
-    perspective: 1000px;
-    overflow: hidden;
+    background:#ef674d;
+    z-index: 3;
 }
-.comein .p1 {
-    transform: translate(-50%,-50%) translateZ(0px) rotateX(-360deg);
-}
- .p1 {
+.box-main {
+    width: 700px;
+    height: 500px;
     position: absolute;
-    top: 45%;
+    bottom:50px;
     left: 50%;
-    transform: translate(-50%,-50%) translateZ(500px) rotateX(0deg) ;
-    width: 880px;
-    height: 320px;
-    background: url(../images/skin.gif) no-repeat ;
-    transition: all 1s;
+    transform:translateX(-50%);
+    background:url(../images/main.png) no-repeat center center;
 }
-.p2 {
-    width: 316px;
-    height: 360px;
+.box-btn {
+        width: 300px;
+        height: 250px;
+        position:absolute;
+        right: 8px;
+        bottom:0;
+}
+.box-btn1{
+    position: absolute;
+    bottom:10px;
+}
+.box-btn4{
+    position: absolute;
+    bottom:10px;
+    opacity:0;
+}
+.box-btn3{
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity:0;
+}
+.box-sf,.xsf {
+    position: absolute;
+    left: 115px;
+    bottom: 200px;
+    display: none;
+}
+
+.section4 {
+    background:#fed url(../images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+}
+.cloud{
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform : translate(-50%,-50%) translateZ(-6000px) scale(0.1);
-    transition: all 1.5s;
+    bottom: 550px;
 }
-.p3 {
+.img1,.img2{
     position: absolute;
-    width: 1440px;
-    height: 760px;
-    top: 50%;
     left: 50%;
-    margin-left: -270px;
-    margin-top: -284px;
-    background-color: pink;
-    // transform : rotateX(30deg) translateZ(-50px);
-     transform : rotateX(120deg) translateZ(-1200px);
-     transition : all 3s;
+    transform: translateX(-50%);
+    bottom: 500px;
+}
+.img2{
+    opacity: 0;
+}
+.gwc{
+    position:absolute;
+    width: 500px;
+    bottom:50px;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 50;
+}
+.car-xsf{
+     position: absolute;
+     bottom:200px;
+     left: 50%;
+     transform: translateX(-50%);
+     display: none;
+     z-index: -1;
 
 }
-.title3 {
+.car {
+    z-index: 999;
+}
+.t1 {
+    background-color: pink;
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin-left : -380px;
-    margin-top :-30px;
-    z-index: 999;
-    transform : rotateX(-60deg) translateZ(-1200px);
-    transition : all 3s;
+    transform:translateX(-50%);
+    bottom:180px;
 }
-/*动画部分*/
- .circle1 div {
-    animation: circlerun 100s linear infinite;
- }
- .circle2 div {
-    animation: circlerun 120s linear infinite;
- }
- .circle3 div {
-    animation: circlerun 140s linear infinite;
- }
- @keyframes circlerun {
-       from {
-          transform: translateX(0px) rotate(0deg);
-       }
-       to {
-           transform: translateX(-2000px) rotate(-3600deg);
-       }
- }
+.t1-2{
+    position: absolute;
+    bottom:170px;
+    left: 50%;
+    transform:translateX(-50%);
+    opacity:0;
+}
+.t1-1{
+    display:none;
+}
+.section5 {
+    background:#d04759 url(../images/t1yisqfa4exxa3gmkg-2000-1500.png);
+    perspective: 500;
+    z-index:3;
+    -webkit-perspective:500;
+}
+.img-51{
+     position: absolute;
+     left: 20%;
+     bottom:200px;
+     z-index:3;
+}
+.img-52{
+      position: absolute;
+     left: 25%;
+     bottom:300px;
+}
+.img-53 {
+     position: absolute;
+     left: 25%;
+     bottom: 800px;
+     display: none;
+}
+.img-54{
+    position: absolute;
+    left: 25%;
+    top: 10px;
+}
+.img-55{
+    position: absolute;
+    left: 68%;
+    bottom:-375px;
+    z-index: 3;
+}
+.img-56{
+    position: absolute;
+    left: 70%;
+    bottom: 200px;
+}
+.overflow {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+}
+.section6 {
+    background:#84d9ed url(../images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+}
+.box-6 {
+    position: absolute;
+    bottom: 500px;
+    left: 123px;
+    z-index:100;
+}
+.car-6 {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    z-index:200;
+}
+.cloud-6 {
+  position: absolute;
+  left: 50%;
+  bottom:490px;
+  animation: cloud6 20s linear infinite;
+}
+@keyframes cloud6 {
+    50% {
+        left: -10%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+.section7 {
+    background:#8ac060 url(../images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 50% 100%;
+}
+.section8 {
+    background:url(../images/ksgw.png);
+}
+
+
+.updown {
+    animation: fly 3s linear infinite;
+}
+
+@keyframes fly {
+    0%{
+        top: 15%;
+    }
+    50%{
+        top:25%;
+    }
+    100%{
+        top: 15%;
+    }
+}
+.sf-updown{
+    animation:sf 2s linear infinite;
+}
+@keyframes sf {
+    0%{
+        top: 18%;
+    }
+    50%{
+        top:23%;
+    }
+    100%{
+        top: 18%;
+    }
+}
+
+.cloud-back {
+    animation:ck 60s linear infinite;
+}
+@keyframes ck{
+     0%{
+        left: 50%;
+     }
+     50%{
+        left: -10%;
+     }
+     100%{
+        left: 50%;
+     }
+}
+.img-54 {
+    animation: ch 3s linear;
+}
+@keyframes ch {
+    100%{
+       transform: translateZ(100px) rotateY(360deg);
+    }
+}
